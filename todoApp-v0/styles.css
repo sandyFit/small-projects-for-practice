@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.counter {
+    display: flex;
+    gap: 2rem;
+}
+
+.form__container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: .5rem;
+}
+
+label {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+input {
+    width: 30vw;
+    padding: 0.8rem 0.5rem;
+    font-size: 1rem;
+}
+button {
+    cursor: pointer;
+}
+
+.submitBtn {
+    background-color: blueviolet;
+    padding: .8rem 0;
+    font-size: larger;
+    color: aliceblue;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 1rem;
+}
+
+.todo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem 0.5rem .5rem 2rem;
+    border: 1px solid gray;
+    position: relative;
+}
+
+.completed {
+    position: absolute;
+    top: 1.4rem;
+    left: -17rem;
+}
+
+.deleteBtn {
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 1px solid blueviolet;
+}
