@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+}
+
+.cards__box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    gap: 2rem;
+}
+
+.card {
+    width: 20vw;
+    padding: 2rem;
+    border: 2px solid rgb(214, 212, 212);
+    border-radius: 6px;
+}
+
+.signature {
+    display: flex;
+    gap: 2rem;
+}
+
+.icon {
+    width: 3rem;
+}

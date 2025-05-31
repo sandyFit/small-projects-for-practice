@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.accordion__container {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+    height: 6rem;
+    padding: 1.5rem;
+    border: 2px solid rgb(214, 213, 213);
+    border-radius: 10px;
+}
+.accordion__box {
+    display: flex;
+    justify-content: space-between;
+}
+.accordion__content {
+    margin-top: 3rem;
+}
+button {
+    width: 2.6rem;
+    height: 2.6rem;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border: none;
+    background-color: rgb(235, 225, 244);
+}
