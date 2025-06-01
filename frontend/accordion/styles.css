@@ -12,30 +12,61 @@ main {
     align-items: center;
 }
 
+h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
 .accordion__container {
     margin-top: 4rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     width: 50%;
-    height: 6rem;
-    padding: 1.5rem;
-    border: 2px solid rgb(214, 213, 213);
-    border-radius: 10px;
 }
-.accordion__box {
+
+.accordion__item {
+    margin-bottom: 10px;
+}
+
+.accordion__content {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease, opacity 0.5s ease;
+    background-color: #e6d6e6;
+    padding: 0 1rem;
+}
+
+.accordion__item.active .accordion__content {
+    max-height: 500px;
+    /* Set to a max value you expect content to be under */
+    opacity: 1;
+    padding: 1rem;
+}
+
+.accordion__title {
     display: flex;
     justify-content: space-between;
+    background-color: rgb(44, 178, 181);   
+    color: aliceblue;
+    font-size: 1.6rem;
+    font-weight: 500;
+    transition: background 1s;
+    padding: 1rem;
 }
-.accordion__content {
-    margin-top: 3rem;
-}
-button {
-    width: 2.6rem;
-    height: 2.6rem;
+
+.accordion__btn {
+    background-color: azure;
     border-radius: 50%;
     font-size: 1.2rem;
     cursor: pointer;
+    width: 2rem;
+    height: 2rem;
     border: none;
-    background-color: rgb(235, 225, 244);
 }
+
+
+.accordion__title:hover {
+    background-color: rgb(84, 201, 205);
+}
+
+
+
