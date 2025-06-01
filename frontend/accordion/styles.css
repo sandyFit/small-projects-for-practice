@@ -5,6 +5,41 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+body {
+    background: #fbf2fb;
+}
+
+body.dark-mode {
+    background: #181418;
+    color: aliceblue;
+}
+
+.navigation {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    padding: 2rem 8rem;
+
+}
+
+.mode__toggle {
+    border: none;
+    background-color: transparent;
+}
+
+.fa-solid {
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.fa-sun {
+    color: rgb(249, 203, 18);
+}
+
+.fa-moon {
+    color: darkblue;
+}
+
 main {
     display: flex;
     flex-direction: column;
@@ -27,24 +62,20 @@ h1 {
 }
 
 .accordion__content {
-    max-height: 0;
-    opacity: 0;
-    overflow: hidden;
-    transition: max-height 0.5s ease, opacity 0.5s ease;
     background-color: #e6d6e6;
     padding: 0 1rem;
+    display: none;
 }
 
 .accordion__item.active .accordion__content {
-    max-height: 500px;
-    /* Set to a max value you expect content to be under */
-    opacity: 1;
+    display: block;
     padding: 1rem;
 }
 
 .accordion__title {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     background-color: rgb(44, 178, 181);   
     color: aliceblue;
     font-size: 1.6rem;
@@ -58,8 +89,8 @@ h1 {
     border-radius: 50%;
     font-size: 1.2rem;
     cursor: pointer;
-    width: 2rem;
-    height: 2rem;
+    width: 2.5rem;
+    height: 2.5rem;
     border: none;
 }
 
@@ -67,6 +98,7 @@ h1 {
 .accordion__title:hover {
     background-color: rgb(84, 201, 205);
 }
+
 
 
 
