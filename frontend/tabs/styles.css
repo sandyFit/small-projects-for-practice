@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fbf2fb;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body.dark {
+    background-color: black;
+}
+
+.navigation {
+    display: flex;
+    justify-content: end;
+    margin: 2rem 8rem;
+}
+
+.mode__toggle {
+    background-color: transparent;
+    border: none;
+}
+
+.fa-sun, .fa-moon {
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.container {
+    margin: 4rem 20rem 0 20rem;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+h1.dark {
+    color: aliceblue;
+}
+
+.tabs__box {
+    display: flex;
+    gap: 0.2rem;
+}
+.tab {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+    width: 13rem;
+    height: 3.5rem;
+    border: 2px solid gray;
+    cursor: pointer;
+}
+
+.tab.active {
+    background-color: rgb(234, 221, 247);
+}
+
+.content__box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content {
+    border: 2px solid gray;
+    margin-top: 0.2rem;
+    padding: 2rem;
+}
+
+hr {
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.right__box {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+.content__title {
+    margin-bottom: 0.3rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+ul {
+    margin-left: 2rem;
+}

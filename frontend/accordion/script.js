@@ -1,9 +1,12 @@
 function switchThemeMode() {
     const toggleBtn = document.querySelector('.mode__toggle');
+    const title = document.querySelector('h1')
     const body = document.body;
 
     toggleBtn.addEventListener('click', () => {
         const isDark = body.classList.toggle('dark-mode');
+        title.classList.toggle('dark-mode');
+
         toggleBtn.innerHTML = isDark
             ? `<i class="fa-solid fa-sun"></i>`
             : `<i class="fa-solid fa-moon"></i>`;

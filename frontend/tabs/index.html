@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>👩🏻‍💻 Tech Role Explorer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <header class="navigation">
+        <button class="mode__toggle">
+            <i class="fa-solid fa-moon"></i>
+        </button>
+    </header>
+
+    <main class="container">
+        <h1>👩🏻‍💻 Tech Role Explorer 🧭</h1>
+        <div class="tabs__box">
+            <button class="tab active" data-role="ML-01"></button>
+            <button class="tab" data-role="SWE-01"></button>
+            <button class="tab" data-role="AI-01"></button>
+            <button class="tab" data-role="DE-01"></button>
+            <button class="tab" data-role="QA-01"></button>
+        </div>
+        
+        <div class="content">
+            <h3 class="content__title" id="roleTitle">Description:</h3>
+            <p id="roleDescription"></p>
+            <hr>
+            <div class="content__box">
+                <div class="left__box">
+                    <h3 class="content__title">Tech Stacks:</h3>
+                    <ul id="techsList"></ul>
+                </div>
+
+                <div class="right__box">
+                    <div class="responsilities">
+                        <h3 class="content__title">Responsabilities:</h3>
+                        <ul id="responsabilitiesList"></ul>
+                    </div>
+                    <div class="entry__level">
+                        <h3 class="content__title">Is this role entry level?</h3>
+                        <p id="entryLevel" ></p>        
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </main>
+    
+    <script type="module" src="./script.js"></script>
+</body>
+</html>
